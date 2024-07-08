@@ -1,0 +1,17 @@
+body {
+    background: url('lung-banner-respiratory-system-smart-healthcare.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+}
