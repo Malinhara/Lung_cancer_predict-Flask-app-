@@ -98,7 +98,7 @@ def results():
     final_features = np.array(features).reshape(1, -1)
     prediction = classifier.predict(sc.transform(final_features))
 
-    # output = prediction[0]
+    output = prediction[0]
     return jsonify(output)
 
 
