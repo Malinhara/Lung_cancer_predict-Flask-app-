@@ -27,4 +27,6 @@ jobs:
         python -m pip install pytest
 
     - name: Run tests
-      run: pytest /venv/script
+      run: pytest
+
+      working-directory: /venv/app.py 
