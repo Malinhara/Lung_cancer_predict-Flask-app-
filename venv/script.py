@@ -1,2 +1,2 @@
-# def run_me():
-#     return "Hello from other_script!"
+def test_example():
+    assert 1 + 1 == 2
