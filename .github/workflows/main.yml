@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./app  
+        working-directory: ./venv/
 
     steps:
       - name: Checkout repository
