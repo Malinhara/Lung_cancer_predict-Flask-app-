@@ -28,5 +28,3 @@ jobs:
 
     - name: Run tests
       run: pytest
-
-      working-directory: /venv/app.py 
