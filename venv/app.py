@@ -20,7 +20,7 @@ dataset['LUNG_CANCER'] = le_lung_cancer.fit_transform(dataset['LUNG_CANCER'])
 X = dataset.iloc[:, :15].values 
 y = dataset.iloc[:, -1].values   
 
-# Split the data
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
 
 # Standardize the features
