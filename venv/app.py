@@ -93,7 +93,7 @@ def results():
                 int(data['fatigue']), int(data['allergy']), int(data['wheezing']), int(data['alcohol_consuming']),
                 int(data['coughing']), int(data['shortness_of_breath']), int(data['swallowing_difficulty']),
                 int(data['chest_pain'])]
-
+    raise Exception
     # Reshape and predict
     final_features = np.array(features).reshape(1, -1)
     prediction = classifier.predict(sc.transform(final_features))
