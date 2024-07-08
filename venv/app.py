@@ -17,9 +17,8 @@ le_lung_cancer = LabelEncoder()
 dataset['GENDER'] = le_gender.fit_transform(dataset['GENDER'])
 dataset['LUNG_CANCER'] = le_lung_cancer.fit_transform(dataset['LUNG_CANCER'])
 
-# Select features and target
-X = dataset.iloc[:, :15].values  # First 15 columns as features
-y = dataset.iloc[:, -1].values   # Last column as the target
+X = dataset.iloc[:, :15].values 
+y = dataset.iloc[:, -1].values   
 
 # Split the data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=0)
