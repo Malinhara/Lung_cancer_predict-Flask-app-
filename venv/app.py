@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 dataset = pd.read_csv('survey lung cancer.csv')
 
-# Initialize label encoders
+
 le_gender = LabelEncoder()
 le_lung_cancer = LabelEncoder()
 
