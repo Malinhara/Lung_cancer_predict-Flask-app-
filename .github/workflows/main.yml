@@ -9,26 +9,26 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     defaults:
-        run:
-          working-directry: ./app/
-          
+      run:
+        working-directory: ./app  
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.12
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Install pytest
-      run: |
-        python -m pip install pytest
+      - name: Install pytest
+        run: |
+          python -m pip install pytest
 
-    - name: Run tests
-      run: python script.py
+      - name: Run tests
+        run: python script.py
