@@ -99,6 +99,7 @@ def results():
     prediction = classifier.predict(sc.transform(final_features))
 
     output = prediction[0]
+    raise Exception()
     return jsonify(output)
 
 
